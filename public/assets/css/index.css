@@ -1,0 +1,213 @@
+body {
+    background-color: hsl(208, 100%, 97%); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; 
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #405670 0%, #d9ecff 100%);
+}
+
+
+
+
+a {
+    color: #3f22c2; 
+    text-decoration: none;
+    transition: color 0.3s;
+    display: inline-block;      
+    padding: 5px 15px;          
+    background-color: #0b2444;   
+    color: white;                
+    text-decoration: none;      
+    border-radius: 3px;          
+    font-weight: bold;           
+}
+
+a:hover {
+    color: #3394fc;
+}
+
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+li {
+    background-color: #0d1a46; 
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+input[type="submit"] {
+    background-color: #09133b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #26e914;
+}
+
+h1, h2, h3 {
+    color: #0b2444;
+    margin-bottom: 15px;
+}
+
+
+p {
+    color:#0b2444;
+    margin-bottom: 15px;
+}
+
+
+.message {
+    background-color: #fffae6;
+    border: 1px solid #ffe58f;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+label{
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 75px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* espacio entre botón y formulario */
+    margin-bottom: 1rem;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20rem;
+}
+
+.btn-crear {
+    background-color: #1d2f4d;
+    color: white;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.form-buscar {
+    display: flex;
+    flex-grow: 1; 
+    max-width: 600px;
+    margin-left: 26rem;
+}
+
+
+.form-buscar input[type="text"] {
+    flex-grow: 1;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    border: 1px solid #10194d;
+    border-right: none;
+    font-size: 1rem;
+}
+
+.form-buscar button {
+    background-color: #1d2f4d;
+    border: none;
+    color: white;
+    padding: 0 1rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form-buscar button:hover {
+    background-color: #1d4ed8;
+}
+
+.cinta-negra {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; 
+    background: black;
+    z-index: 1; 
+    transition: all 0.3s ease; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Botón circular oscuro */
+.logout-circle {
+    position: relative; /* para posicionar el ícono dentro */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-circle:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
+
+.logout-icon {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 40px;  /* más grande que el contenedor */
+    height: 50px;
+    transform: translate(-50%, -50%); /* centra exactamente */
+    object-fit: contain;
+}
+
